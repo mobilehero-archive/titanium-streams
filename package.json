@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/streams",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Titanium SDK for AMPLIFY Streams",
 	"main": "./lib/index.js",
 	"scripts": {
@@ -42,6 +42,6 @@
 		"eslint-plugin-promise": "^4.1.1"
 	},
 	"dependencies": {
-		"@titanium/eventsource": "0.0.1"
+		"@titanium/eventsource": "0.0.2"
 	}
 }
