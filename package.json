@@ -45,6 +45,6 @@
 		"eslint-plugin-promise": "^4.1.1"
 	},
 	"dependencies": {
-		"@titanium/eventsource": "0.0.3"
+		"@titanium/eventsource": "0.0.4"
 	}
 }
