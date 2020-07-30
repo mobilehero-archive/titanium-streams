@@ -38,7 +38,7 @@
 	},
 	"homepage": "https://github.com/brentonhouse/titanium-streams#readme",
 	"devDependencies": {
-		"@geek/eslint-config": "0.0.11",
+		"@geek/eslint-config": "0.0.12",
 		"eslint": "^6.8.0",
 		"eslint-plugin-import": "^2.22.0",
 		"eslint-plugin-jsdoc": "^18.11.0",
