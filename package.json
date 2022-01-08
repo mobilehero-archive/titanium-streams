@@ -1,13 +1,15 @@
 {
 	"name": "@titanium/streams",
-	"version": "0.0.3",
-	"description": "Titanium SDK for AMPLIFY Streams",
+	"version": "1.0.1",
+	"description": "⭐  Axway Amplify module for using Axway Amplify Streams with Appcelerator Titanium SDK Framework",
 	"main": "./lib/index.js",
 	"scripts": {
-		"list-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-		"test": "npm install --ignore-scripts && npm run list-files",
-		"prepublishOnly": "git pull && bump",
-		"lint": "eslint . --fix"
+		"lint": "eslint . --fix",
+		"list": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+		"prep": "npm install --ignore-scripts",
+		"test": "npm run prep",
+		"prepublishOnly": "git pull && npm test && bump insane",
+		"prepublishOnly2": "git pull && npm test && npm audit fix && bump insane"
 	},
 	"keywords": [
 		"titanium",
@@ -21,30 +23,63 @@
 		"eventsource",
 		"sse",
 		"server-sent-event",
-		"streams"
+		"streams",
+		"sdk",
+		"plugin",
+		"amplify",
+		"api-builder",
+		"appcelerator-titanium",
+		"titanium-sdk",
+		"titanium-mobile",
+		"titanium-module",
+		"axway-sdk",
+		"axway-amplify",
+		"brenton-house"
 	],
 	"repository": {
 		"type": "git",
-		"url": "github:brentonhouse/titanium-streams.git"
+		"url": "github:mobilehero-archive/titanium-streams.git"
 	},
 	"author": {
 		"name": "Brenton House",
-		"email": "brenton.house@gmail.com",
 		"url": "https://brenton.house"
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/brentonhouse/titanium-streams/issues"
+		"url": "https://github.com/mobilehero-archive/titanium-streams/issues"
 	},
-	"homepage": "https://github.com/brentonhouse/titanium-streams#readme",
+	"homepage": "https://brenton.house/saying-goodbye-to-axway-amplify-titanium-31a44f3671de",
 	"devDependencies": {
-		"@geek/eslint-config": "0.0.12",
-		"eslint": "^6.8.0",
-		"eslint-plugin-import": "^2.23.4",
-		"eslint-plugin-jsdoc": "^18.11.0",
-		"eslint-plugin-promise": "^4.3.1"
+		"@geek/eslint-config": "^1.0.3",
+		"eslint": "^8.6.0",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-jsdoc": "^37.5.2",
+		"eslint-plugin-promise": "^6.0.0"
 	},
 	"dependencies": {
-		"@titanium/eventsource": "0.0.4"
+		"@geek/cache": "^1.0.2",
+		"@geek/config": "^0.2.4",
+		"@geek/dotenv": "^0.0.9",
+		"@geek/jsonc": "^1.0.4",
+		"@geek/jwt": "^1.0.1",
+		"@geek/logger": "^1.0.18",
+		"@geek/retry": "^1.0.0",
+		"@geek/spawn": "^0.0.3",
+		"@geek/spinner": "^1.0.0",
+		"@geek/tld": "^2.0.1-1",
+		"@titanium/appcelerator": "^6.0.4",
+		"@titanium/bluebird": "^3.7.9",
+		"@titanium/errors": "^1.0.7",
+		"@titanium/essentials": "^1.0.38",
+		"@titanium/events": "^1.0.20",
+		"@titanium/eventsource": "^1.0.5",
+		"@titanium/jwt": "^1.0.9",
+		"@titanium/module-copier": "^1.0.15",
+		"@titanium/please": "^1.0.16",
+		"@titanium/polyfill": "^1.0.18",
+		"@titanium/querystring": "^1.0.3",
+		"@titanium/tiapp-xml": "^1.0.14",
+		"@titanium/titanium": "^5.4.8",
+		"@titanium/turbo": "^2.2.23"
 	}
 }
