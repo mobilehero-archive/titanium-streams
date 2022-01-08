@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/streams",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "⭐  Axway Amplify module for using Axway Amplify Streams with Appcelerator Titanium SDK Framework",
 	"main": "./lib/index.js",
 	"scripts": {
