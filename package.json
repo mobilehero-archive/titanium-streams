@@ -1,6 +1,6 @@
 {
 	"name": "@titanium/streams",
-	"version": "1.0.34",
+	"version": "1.0.35",
 	"description": "⭐  Axway Amplify module for using Axway Amplify Streams with Appcelerator Titanium SDK Framework",
 	"main": "./lib/index.js",
 	"scripts": {
@@ -80,6 +80,6 @@
 		"@titanium/querystring": "^1.0.36",
 		"@titanium/tiapp-xml": "^1.0.46",
 		"@titanium/titanium": "^5.4.44",
-		"@titanium/turbo": "^2.2.62"
+		"@titanium/turbo": "^2.2.63"
 	}
 }
